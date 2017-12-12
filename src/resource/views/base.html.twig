@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+  <title>{% block title %}{{NOMBRE_HOSPITAL}}{% endblock %}</title>
+  <link href="{{BASE_URL_INC}}src\resource\public\css\materialize.min.css" rel="stylesheet" type="text/css">
+  <link href="{{BASE_URL_INC}}src\resource\public\css\font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="{{BASE_URL_INC}}src\resource\public\css\sweetalert.css" rel="stylesheet" type="text/css">
+
+  {% block css %}{% endblock %}
+</head>
+<body>
+
+  <!-- Dropdown Structure -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">three</a></li>
+  </ul>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo"> Super Costo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  {% block body %}{% endblock %}
+
+  <!-- sector de scripts -->
+  <script type="text/javascript" src="{{BASE_URL_INC}}src/resource/public/js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="{{BASE_URL_INC}}src/resource/public/js/materialize.min.js"></script>
+
+  {% block js %}{% endblock %}
+
+</body>
+</html>

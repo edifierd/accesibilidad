@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+<link href="{{CSS_BASE_URL}}/index.css" type="text/css" rel="stylesheet" media="screen,projection">
+{% endblock %}
+
+{% block title %}Listado de Datos Demograficos{% endblock %}
+
+{% block body %}
+
+<div class="carousel carousel-slider">
+  <a class="carousel-item" href="#one!"><img class="responsive-img" src="http://static.websguru.com.ar/var/m_1/12/128/67918/1027619-supermercado-tio-juan-banner-min-min.png"></a>
+  <a class="carousel-item" href="#two!"><img class="responsive-img" src="http://static.websguru.com.ar/var/m_c/cd/cd3/56923/858439-banner.jpg"></a>
+  <a class="carousel-item" href="#three!"><img class="responsive-img" src="http://diariolaopinion.com.ar/download/multimedia.normal.9c0c311a47b794df.6e6f726d616c2e6a7067.jpg"></a>
+  <a class="carousel-item" href="#four!"><img class="responsive-img" src="http://obbiofood.com/wp-content/uploads/2015/09/1170-OBBIO-Banners-web-1.png"></a>
+  <a class="carousel-item" href="#five!"><img class="responsive-img" src="http://ecolim.mx/img/bannerTop_secc_06_supermercados.png"></a>
+</div>
+
+{% endblock %}
+
+{% block js %}
+<script language="JavaScript" src="{{JS_BASE_URL}}/index.js"></script>
+{% endblock %}
