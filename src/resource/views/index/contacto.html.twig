@@ -1,0 +1,84 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+<link href="{{CSS_BASE_URL}}/index.css" type="text/css" rel="stylesheet" media="screen,projection">
+{% endblock %}
+
+{% block title %}SuperCosto Contacto{% endblock %}
+
+{% block body %}
+
+
+<div class="row form">
+  <h3>Contactenos</h3>
+  <div class="col s12 m12 l12">
+    <div class="card">
+      <div class="card-image">
+        <img src="http://letsbonus3.statics.download/products/177000/177894/13649812936325-0-680x276.jpg" alt="Personal Callcenter" title="Personal Callcenter">
+        <span class="card-title">Contacto</span>
+      </div>
+      <div class="card-content">
+        <form action="{{BASE_URL}}" method="POST">
+          <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="Placeholder" id="first_name" type="text" name="name" value="" class="validate" required>
+              <label for="first_name">Nombre</label>
+            </div>
+            <div class="input-field col s6">
+              <input  id="last_name" name="last_name" type="text" value="" class="validate" required>
+              <label for="last_name">Apellido</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" name="email" type="email" value="" class="validate" required>
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" name="password" type="text" value="" class="validate" required>
+              <label for="password">Direccion</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="telefono" name="telefono" type="text" value="" class="validate" required>
+              <label for="telefono">Teléfono</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" name="textarea1" value="" class="materialize-textarea" required></textarea>
+              <label for="textarea1">Mensaje</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6 m6">
+              <button class="btn waves-effect waves-light" type="submit" >Enviar </button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="col s6 m6">
+    <div class="card-panel blue">
+      <span class="white-text">
+        <ul>
+          <li>* Todos los campos son requeridos.</li>
+        </ul>
+      </span>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}
+
+{% block js %}
+<script language="JavaScript" src="{{JS_BASE_URL}}/index.js"></script>
+{% endblock %}
