@@ -21,6 +21,12 @@ class indexController extends Controller {
 
     $this->_view->render('contacto.html.twig');
   }
+  
+  public function conformidad(){
+
+
+    $this->_view->render('conformidad.html.twig');
+  }
 
 
 

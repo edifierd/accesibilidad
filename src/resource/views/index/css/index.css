@@ -1,4 +1,5 @@
 .nav-wrapper{
+  background-color: #a50c11;
 }
 
 .panel_video{
@@ -11,4 +12,82 @@
 
 .form{
   margin-top: 3%;
+}
+
+.input-field label {
+    color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    font-size: 1rem;
+    cursor: text;
+    -webkit-transition: -webkit-transform .2s ease-out;
+    transition: -webkit-transform .2s ease-out;
+    transition: transform .2s ease-out;
+    transition: transform .2s ease-out, -webkit-transform .2s ease-out;
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    text-align: initial;
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+    pointer-events: none;
+}
+
+.page-footer {
+    padding-top: 20px;
+    color: #fff;
+    background-color: #a50c11;
+}
+
+@media (orientation: landscape) {
+  .side-nav{
+    display:none;
+  }
+}
+
+.h3-text {
+    display: block;
+    font-size: 4em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+.h4-text {
+    display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    font-size: 2.28rem;
+    line-height: 110%;
+    margin: 1.14rem 0 .912rem 0;
+}
+
+.h5-text {
+    display: block;
+    -webkit-margin-before: 1.67em;
+    -webkit-margin-after: 1.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    font-size: 1.64rem;
+line-height: 110%;
+margin: .82rem 0 .656rem 0;
+}
+
+.h6-text {
+    display: block;
+    font-size: 1rem;
+    line-height: 110%;
+    margin: .5rem 0 .4rem 0;
+    -webkit-margin-before: 2.33em;
+    -webkit-margin-after: 2.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
 }
