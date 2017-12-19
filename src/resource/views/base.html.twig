@@ -1,26 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
-  <html lang="es">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}{{NOMBRE_HOSPITAL}}{% endblock %}</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="{{BASE_URL_INC}}src\resource\public\css\materialize.min.css" rel="stylesheet" type="text/css">
   <link href="{{BASE_URL_INC}}src\resource\public\css\font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="{{BASE_URL_INC}}src\resource\public\css\sweetalert.css" rel="stylesheet" type="text/css">
-  <style media="screen">
+  <link href="{{BASE_URL_INC}}src\resource\public\css\custom.css" rel="stylesheet" type="text/css">
 
-  html{
-    height: 100vh
-  }
-  body.sticky{
-    display: flex;
-    min-height: 100%;
-    flex-direction: column;
-  }
-  main{
-    flex: 1 0 auto;
-  }
-  </style>
   {% block css %}{% endblock %}
 </head>
 <body class="sticky">
@@ -28,7 +17,13 @@
   <nav>
     <div class="nav-wrapper">
       <a href="{{BASE_URL}}" class="brand-logo"> SuperCosto</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><em class="material-icons">menu</em></a>
       <ul class="right hide-on-med-and-down">
+        <li><a href="{{BASE_URL}}">Nuestros Productos</a></li>
+        <li><a href="{{BASE_URL}}index/nosotros">Institucional</a></li>
+        <li><a href="{{BASE_URL}}index/contacto">Contacto</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo" >
         <li><a href="{{BASE_URL}}">Nuestros Productos</a></li>
         <li><a href="{{BASE_URL}}index/nosotros">Institucional</a></li>
         <li><a href="{{BASE_URL}}index/contacto">Contacto</a></li>
@@ -43,7 +38,7 @@
       <div class="row">
         <div class="col s12 m12">
           <div class="card-panel  red accent-4 mensaje">
-            <span class="white-text">
+            <span class="white-text" autofocus>
               <ul>
                 {% set msj = flashBag.getMsj('success') %}
                 {% for success in msj %}
@@ -77,7 +72,7 @@
           </p>
         </div>
         <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Enlaces</h5>
+          <h5 class="white-text">Enlaces</h4>
           <ul>
             <li><a class="grey-text text-lighten-3" href="{{BASE_URL}}">Nuestros Productos</a></li>
             <li><a class="grey-text text-lighten-3" href="{{BASE_URL}}index/nosotros">Institucional</a></li>
@@ -89,7 +84,7 @@
     <div class="footer-copyright">
       <div class="container">
         Copyright 2017 © SuperCosto, Todos los derechos reservados
-        <a class="grey-text text-lighten-4 right" href="http://www.buenosaires.gob.ar/defensaconsumidor">Dirección General de Defensa y Protección al Consumidor</a>
+        <a class="grey-text text-lighten-4 right" title="Dirección General de Defensa y Protección al Consumidor" href="http://www.buenosaires.gob.ar/defensaconsumidor">Dirección General de Defensa y Protección al Consumidor</a>
       </div>
     </div>
   </footer>

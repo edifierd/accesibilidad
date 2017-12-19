@@ -1,0 +1,11 @@
+html{
+  height: 100vh
+}
+body.sticky{
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+main{
+  flex: 1 0 auto;
+}

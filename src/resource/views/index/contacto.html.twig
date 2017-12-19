@@ -20,42 +20,51 @@
       <div class="card-content">
         <form action="{{BASE_URL}}" method="POST">
           <div class="row">
-            <div class="input-field col s6">
-              <input placeholder="Placeholder" id="first_name" type="text" name="name" value="" class="validate" required>
-              <label for="first_name">Nombre</label>
+            <div class="col s12 m12 l12">
+              <div class="card-panel blue">
+                <span class="white-text">
+                  <ul>
+                    <li><h6>* Todos los campos son requeridos.<h6></li>
+                  </ul>
+                </span>
+              </div>
             </div>
-            <div class="input-field col s6">
-              <input  id="last_name" name="last_name" type="text" value="" class="validate" required>
-              <label for="last_name">Apellido</label>
+            <div class="input-field col s12 m12 l6">
+              <input placeholder="Nombre" id="first_name" type="text" name="name" value="" class="validate" tabindex="1" required >
+              <label for="first_name">* Nombre</label>
             </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="email" name="email" type="email" value="" class="validate" required>
-              <label for="email">Email</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input id="password" name="password" type="text" value="" class="validate" required>
-              <label for="password">Direccion</label>
+            <div class="input-field col s12 m12 l6">
+              <input  id="last_name" name="last_name" type="text" value="" class="validate" tabindex="2" required>
+              <label for="last_name">* Apellido</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <input id="telefono" name="telefono" type="text" value="" class="validate" required>
-              <label for="telefono">Teléfono</label>
+              <input id="email" name="email" type="email" value="" class="validate" tabindex="3" required>
+              <label for="email">* Email</label>
             </div>
           </div>
           <div class="row">
             <div class="input-field col s12">
-              <textarea id="textarea1" name="textarea1" value="" class="materialize-textarea" required></textarea>
-              <label for="textarea1">Mensaje</label>
+              <input id="password" name="password" type="text" value="" class="validate" tabindex="4" required>
+              <label for="password">* Direccion</label>
             </div>
           </div>
           <div class="row">
-            <div class="input-field col s6 m6">
-              <button class="btn waves-effect waves-light" type="submit" >Enviar </button>
+            <div class="input-field col s12">
+              <input id="telefono" name="telefono" type="text" value="" class="validate" tabindex="5" required>
+              <label for="telefono">*Teléfono</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" name="textarea1" value="" class="materialize-textarea" tabindex="6" required></textarea>
+              <label for="textarea1">*Mensaje</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12 m6 l6">
+              <button class="btn waves-effect waves-light" type="submit" tabindex="7">Enviar </button>
             </div>
           </div>
         </form>
@@ -64,15 +73,7 @@
     </div>
 
   </div>
-  <div class="col s6 m6">
-    <div class="card-panel blue">
-      <span class="white-text">
-        <ul>
-          <li>* Todos los campos son requeridos.</li>
-        </ul>
-      </span>
-    </div>
-  </div>
+
 </div>
 
 
